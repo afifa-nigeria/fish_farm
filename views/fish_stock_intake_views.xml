@@ -1,0 +1,23 @@
+<odoo>
+    <data>
+        <!-- Define the fish.stock.intake form view -->
+        <record id="view_fish_stock_intake_form" model="ir.ui.view">
+            <field name="name">fish.stock.intake.form</field>
+            <field name="model">fish_farm.fish_stock_intake</field>
+            <field name="arch" type="xml">
+                <!-- Add your form view definition here -->
+            </field>
+        </record>
+
+        <!-- Define the fish.stock.intake list view -->
+        <record id="view_fish_stock_intake_list" model="ir.ui.view">
+            <field name="name">fish.stock.intake.list</field>
+            <field name="model">fish_farm.fish_stock_intake</field>
+            <field name="arch" type="xml">
+                <!-- Add your list view definition here -->
+            </field>
+        </record>
+
+        <!-- Add any other views you need for the fish.stock.intake model -->
+    </data>
+</odoo>

@@ -1,0 +1,23 @@
+<odoo>
+    <data>
+        <!-- Parent Menu -->
+        <menu name="Fish Farm" id="menu_fish_farm" />
+
+        <!-- Submenus -->
+        <menu name="Fish Stock" id="menu_fish_stock" parent="menu_fish_farm" sequence="10" />
+        <menuitem name="Fish Stock Intake" id="menu_fish_stock_intake" parent="menu_fish_stock" action="action_fish_stock_intake" sequence="10" />
+        <menuitem name="Stock Allocation" id="menu_stock_allocation" parent="menu_fish_stock" action="action_stock_allocation" sequence="20" />
+        <menuitem name="Growth Monitoring" id="menu_growth_monitoring" parent="menu_fish_stock" action="action_growth_monitoring" sequence="30" />
+        <menuitem name="Feeding Schedule" id="menu_feeding_schedule" parent="menu_fish_stock" action="action_feeding_schedule" sequence="40" />
+        <menuitem name="Water Quality Monitoring" id="menu_water_quality" parent="menu_fish_stock" action="action_water_quality" sequence="50" />
+        <menuitem name="Disease Prevention and Treatment" id="menu_disease_management" parent="menu_fish_stock" action="action_disease_management" sequence="60" />
+        <menuitem name="Harvest Planning" id="menu_harvest_planning" parent="menu_fish_stock" action="action_harvest_planning" sequence="70" />
+
+        <menu name="Sales and Distribution" id="menu_sales_distribution" parent="menu_fish_farm" sequence="20" />
+        <!-- Add your submenus under the Sales and Distribution menu -->
+
+        <menu name="Reporting and Analysis" id="menu_reporting_analysis" parent="menu_fish_farm" sequence="30" />
+        <!-- Add your submenus under the Reporting and Analysis menu -->
+
+    </data>
+</odoo>
